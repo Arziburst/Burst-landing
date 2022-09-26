@@ -1,11 +1,11 @@
 {
-    "name": "boilerplate-frontend",
-    "version": "5.2.0",
-    "description": "boilerplate",
+    "name": "burst-landing",
+    "version": "1.0.0",
+    "description": "burst-landing",
     "author": "arziburst@gmail.com",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Arziburst/boilerplate.git"
+        "url": "https://github.com/Arziburst/Burst-landing"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=development ts-node -P \"./tsconfig.webpack.json\" \"./scripts/webpack/start\"",
