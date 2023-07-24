@@ -18,5 +18,6 @@ export const getDevConfig = () => {
         modules.loadImagesDev(),
         modules.loadDevCss(),
         modules.loadFontsDev(),
+        modules.connectFriendlyErrors(),
     );
 };

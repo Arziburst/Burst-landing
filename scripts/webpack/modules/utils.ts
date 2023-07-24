@@ -7,9 +7,15 @@ import WebpackBar from 'webpackbar';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import HtmlMinimizerPlugin from 'html-minimizer-webpack-plugin';
 import dotenv from 'dotenv';
+// @ts-ignore
+import FriendlyErrorsWebpackPlugin from '@soda/friendly-errors-webpack-plugin';
 
 export const connectBuildProgressIndicator = (): Configuration => ({
     plugins: [ new WebpackBar({ basic: true }) ],
+});
+
+export const connectFriendlyErrors = (): Configuration => ({
+    plugins: [ new FriendlyErrorsWebpackPlugin() ],
 });
 
 export const connectBundleAnalyzer = (): Configuration => ({
